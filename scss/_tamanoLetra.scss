@@ -2,12 +2,26 @@
 @mixin letra {
     font-size: 25px
 }
+/* Mapa */
+$colors: (
+  Tienda: #55acee,
+  Servicios:  #ebaa84,
+  Acerca: #a0f17f
+);
+@each $name-color, $bgcolor in $colors {
+    .btn--#{$name-color} {
+        background-color: $bgcolor;}
+}
 /* fuente */
 @import url('https://fonts.googleapis.com/css2? family= Nunito+Sans:ital,wght@0,600;1,200 & display=swap');
 header {
     background-image: url(../img/descarga1.PNG)
 }
-
+/* medidas de carrusel*/
+.carrusel{
+    height: 60vh;
+    max-height: 60vh;
+}
 body {
     background-color: rgb(243, 199, 223);
 font-family: 'Edu VIC WA NT Beginner', cursive;

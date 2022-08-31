@@ -7,3 +7,6 @@ Se modifica todos los nombres de las imagenes y se dejan sin espacios
 Se chequea que el sitio pueda navegar entre si y no solo al menu inicio
 Se realizaron modificaciones en la mediaqueries para que funcione correctamente responsive
 se quitan BR en el apartado contacto, y se usan las herramientas correspondientes para que todo quede funcional con correspondientes
+Se agrega dentro de _mediaqueries el extend
+se agrega en _tamanoletra.scss el mapa
+Se agrega Map-get en _mediaqueries

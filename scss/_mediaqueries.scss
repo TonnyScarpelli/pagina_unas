@@ -1,10 +1,26 @@
 /* responsive diseño */
-
+/*map-get*/
+$colors: (
+  100: #55acee,
+  200:  #ebaa84,
+  300: #a0f17f
+);
 /* desktop*/
 @media (min-width: 1024px){
 header>img{
     height: 200px;
     width: 200px
+}
+/*extend*/
+%titulo {
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: baseline;
+        justify-content: flex-end;
 }
 /* tamaños de letra*/
 h1 {
@@ -22,18 +38,19 @@ h3{
 }
 p{
     font-size: 20px;
+    color: color("100");
 }
 nav>span {
-        list-style: none;
-        width: 12px;
-        height: 30px;
-        padding: 3px 15px;
-        margin: 15px;
-        border-radius: 5px;
-        background-color:rgb(255, 255, 255);
-        border-radius: 5px;
-        border-left: 5px solid;
-        }
+    list-style: none;
+    width: 12px;
+    height: 30px;
+    padding: 3px 15px;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    border-left: 5px solid;
+    margin: 15px;
+}
         span:hover{
             background-color: rgb(252, 252, 252);
             border-left: solid 5px rgb(210, 30, 99);
@@ -41,14 +58,7 @@ nav>span {
     header{
         background-image: url(./img/descarga1.PNG);
         width: 100%;
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        flex-wrap:wrap;
-        align-items: baseline;
-        justify-content: flex-end;
+        @extend %titulo;
         height: 200px;
         }
     /*Trancisiones*/
@@ -65,10 +75,6 @@ nav>span {
         height: 400px;
         margin-bottom: 50px;
     }
-    .carrusel{
-        height: 60vh;
-        max-height: 60vh;
-    }
 }
 /* tablet*/
 @media (min-width: 481px) and (max-width: 1023px){
@@ -77,19 +83,19 @@ header>img{
         width: 130px;
     }
     /* tamaños de letra*/
-    h1 {
+h1 {
     font-size: 45px;
     padding-top: 5px;
     margin: 30px;
 }
-    .subtitulo{
+.subtitulo{
     font-size: 20px;
-    padding-top: 10px
+    padding-top: 10px;
 }
-    p{
+p{
     font-size: 18px;
 }
-    nav>span {
+nav>span {
         list-style: none;
         width: 12px;
         height: 30px;
@@ -124,41 +130,36 @@ header>img{
         height: 200px;
         }
         /* pagina acerca enlace youtube */
-    .movimiento{
+.movimiento{
     margin-left: 25%;
     width: 50%;
     height: 300px;
     margin-bottom: 50px;
 }
-/* medidas de carrusel*/
-    .carrusel{
-    height: 55vh;
-    max-height: 55vh;
-}
 }
 /* cel*/
-@media (max-width: 480px) and (min-width: 300px){
+@media (max-width: 480px) and (min-width: 380px){
     /* tamaños de letra*/
-    h1 {
+h1 {
     font-size: 35px;
     padding-top: 10px
 }
-    .subtitulo{
+.subtitulo{
     font-size: 18px;
     padding-top: 10px
 }
-    p{
+p{
     font-size: 16px;
 }
     header>img{
-        height: 200px;
-        width: 200px
+        height: 100px;
+        width: 100px
     }
     body {
         background-color: rgb(157, 214, 247);
     font-family: 'Edu VIC WA NT Beginner', cursive;
     }
-    nav>span {
+nav>span {
         list-style: none;
         width: 12px;
         height: 30px;
@@ -187,14 +188,22 @@ header>img{
         justify-content: normal;
         }
 /* pagina acerca enlace youtube */
-    .movimiento{
+.movimiento{
     margin-left: 1%;
     width: 100%;
     height: 200px;
 }
-/* medidas de carrusel*/
-    .carrusel{
-    height: 45vh;
-    max-height: 45vh;
 }
+
+%header {
+        width: 100%;
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: normal;
+        align-items: center;
+        justify-content: flex-end;
 }

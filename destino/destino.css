@@ -1,13 +1,25 @@
 @charset "UTF-8";
 /*mixin*/
-/* fuente */
+/* Mapa */
 @import url("https://fonts.googleapis.com/css2? family= Nunito+Sans:ital,wght@0,600;1,200 & display=swap");
 /* responsive diseño */
+/*map-get*/
 /* desktop*/
 @media (min-width: 1024px) {
   header > img {
     height: 200px;
     width: 200px;
+  }
+  /*extend*/
+  header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
   }
   /* tamaños de letra*/
   h1 {
@@ -25,17 +37,18 @@
   }
   p {
     font-size: 20px;
+    color: color("100");
   }
   nav > span {
     list-style: none;
     width: 12px;
     height: 30px;
     padding: 3px 15px;
-    margin: 15px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     border-left: 5px solid;
+    margin: 15px;
   }
   span:hover {
     background-color: rgb(252, 252, 252);
@@ -44,14 +57,6 @@
   header {
     background-image: url(./img/descarga1.PNG);
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: flex-end;
     height: 200px;
   }
   /*Trancisiones*/
@@ -67,10 +72,6 @@
     width: 50%;
     height: 400px;
     margin-bottom: 50px;
-  }
-  .carrusel {
-    height: 60vh;
-    max-height: 60vh;
   }
 }
 /* tablet*/
@@ -132,14 +133,9 @@
     height: 300px;
     margin-bottom: 50px;
   }
-  /* medidas de carrusel*/
-  .carrusel {
-    height: 55vh;
-    max-height: 55vh;
-  }
 }
 /* cel*/
-@media (max-width: 480px) and (min-width: 300px) {
+@media (max-width: 480px) and (min-width: 380px) {
   /* tamaños de letra*/
   h1 {
     font-size: 35px;
@@ -153,8 +149,8 @@
     font-size: 16px;
   }
   header > img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
   body {
     background-color: rgb(157, 214, 247);
@@ -193,11 +189,6 @@
     margin-left: 1%;
     width: 100%;
     height: 200px;
-  }
-  /* medidas de carrusel*/
-  .carrusel {
-    height: 45vh;
-    max-height: 45vh;
   }
 }
 /* estilo de Footer */
@@ -381,8 +372,27 @@ footer > section {
     margin-left: 0;
   }
 }
+.btn--Tienda {
+  background-color: #55acee;
+}
+
+.btn--Servicios {
+  background-color: #ebaa84;
+}
+
+.btn--Acerca {
+  background-color: #a0f17f;
+}
+
+/* fuente */
 header {
   background-image: url(../img/descarga1.PNG);
+}
+
+/* medidas de carrusel*/
+.carrusel {
+  height: 60vh;
+  max-height: 60vh;
 }
 
 body {
