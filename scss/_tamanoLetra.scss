@@ -1,0 +1,41 @@
+/*mixin*/
+@mixin letra {
+    font-size: 25px
+}
+/* fuente */
+@import url('https://fonts.googleapis.com/css2? family= Nunito+Sans:ital,wght@0,600;1,200 & display=swap');
+header {
+    background-image: url(../img/descarga1.PNG)
+}
+body {
+    background-color: rgb(243, 199, 223);
+font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+h2{
+    @include letra;
+}
+h3{
+    @include letra;
+}
+h4{
+    @include letra;
+}
+.cursiva{
+    font-style: italic;
+    }
+.negrita {
+    font-weight: bold;
+}
+.centrado{
+    text-align: center;
+}
+.etiqueta{
+    margin-top: 80px;
+}
+/*Pagina Contacto*/
+.superior{
+    margin-top: 20px;
+}
+.izq{
+    margin-left:30px;
+}
