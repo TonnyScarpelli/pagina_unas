@@ -1,0 +1,575 @@
+* {
+    box-sizing: border-box;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,900&display=swap');
+  body {
+    background-color: rgb(243, 199, 223);
+    font-family: 'Lato';
+  }
+  .p{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+  }
+ /*Mediaqueries*/
+ /* DESKTOP*/
+@media (min-width: 1024px) and (max-width: 1500px)  {
+  header > img {
+    height: 200px;
+    width: 200px;
+  }
+  /* tamaños de letra*/
+  h1 {
+    font-size: 70px;
+    padding-top: 5px;
+    margin-top: 50px;
+  }
+  nav{
+    margin-bottom: 15px;
+  }
+  nav > span {
+    list-style: none;
+    width: 12px;
+    height: 30px;
+    padding: 3px 15px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  nav>span:hover {
+    background-color: rgb(243, 199, 223);
+    border-left: solid 5px rgb(210, 30, 99);
+    border-right: solid 5px rgb(210, 30, 99);
+  }
+  span>.decoracion{
+    text-decoration: none;
+    color: rgb(153, 53, 53);
+    font-weight: bold;
+  }
+  header {
+    background-image: url(./img/descarga1.PNG);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+    height: 200px;
+  }
+  .carrusel {
+    height: 60vh;
+    max-height: 60vh;
+  }
+  /*pagina Reservas*/
+  .agenda {
+    margin-bottom: 50px;
+    width:80%;
+    height: 140vh;
+    margin-left: 100px;
+  }
+  /* Youtube */
+  .movimiento {
+    margin-left: 10%;
+    width: 80%;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  /*Pagina Contacto */
+  .superior {
+    margin-top: 20px;
+  }
+  .izq {
+    margin-left: 30px;
+  }
+  .correo{
+    margin-left:9px ;
+  }
+  .titulos{
+    margin-left: 10px;
+  }
+  .preguntale{
+    font-size: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* TABLET*/
+@media (min-width: 481px) and (max-width: 1023px) {
+  header > img {
+    height: 130px;
+    width: 130px;
+    margin-bottom: 25px;
+  }
+  /* tamaños de letra*/
+  h1 {
+    font-size: 45px;
+    padding-top: 5px;
+    margin: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+  nav{
+    margin-bottom: 15px;
+  }
+  nav > span {
+    list-style: none;
+    width: 8px;
+    height: 20px;
+    padding: 1px 5px;
+    margin: 7px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  nav>span:hover {
+    background-color: rgb(243, 199, 223);
+    border-left: solid 5px rgb(210, 30, 99);
+    border-right: solid 5px rgb(210, 30, 99);
+  }
+  span>.decoracion{
+    text-decoration: none;
+    color: rgb(153, 53, 53);
+    font-weight: bold;
+  }
+  header {
+    background-image: url(./img/descarga1.PNG);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: normal;
+    align-items: center;
+    justify-content: flex-end;
+    height: 200px;
+  }
+  /* pagina acerca enlace youtube */
+  .movimiento {
+    margin-left: 25%;
+    width: 50%;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  /* medidas de carrusel*/
+  .carrusel {
+    height: 55vh;
+    max-height: 55vh;
+  }
+    /*Agenda Reservas*/
+.agenda{
+  width: 500px;
+  height: 500px;
+  margin-left: 55px;
+  margin-bottom: 55px;
+}
+/* Youtube */
+.movimiento {
+  margin-left: 25%;
+  width: 50%;
+  height: 300px;
+  margin-bottom: 50px;
+}
+  /*Pagina Contacto */
+  .superior {
+    margin-top: 20px;
+  }
+  .izq {
+    margin-left: 30px;
+  }
+  .correo{
+    margin-left:9px ;
+  }
+  .titulos{
+    margin-left: 10px;
+  }
+  .preguntale{
+    font-size: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* cel*/
+@media (max-width: 480px) and (min-width: 300px) {
+  /* tamaños de letra*/
+  h1 {
+    font-size: 35px;
+    padding-top: 10px;
+  }
+  p {
+    font-size: 16px;
+  }
+  header > img {
+    height: 200px;
+    width: 200px;
+  }
+  nav > span {
+    list-style: none;
+    width: 12px;
+    height: 22px;
+    padding: 1px 33px;
+    margin: 6px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  nav>span:hover {
+    background-color: rgb(243, 199, 223);
+    border-left: solid 5px rgb(210, 30, 99);
+    border-right: solid 5px rgb(210, 30, 99);
+  }
+  span>.decoracion{
+    text-decoration: none;
+    color: rgb(153, 53, 53);
+    font-weight: bold;
+  }
+  header {
+    background-image: url(./img/descarga1.PNG);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: normal;
+  }
+  /* pagina acerca enlace youtube */
+  .movimiento {
+    margin-left: 1%;
+    width: 100%;
+    height: 200px;
+  }
+  /* medidas de carrusel*/
+  .carrusel {
+    height: 45vh;
+    max-height: 45vh;
+  }
+  .agenda{
+    height: 500px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+    /*Pagina Contacto */
+    .superior {
+      margin-top: 20px;
+    }
+    .izq {
+      margin-left: 30px;
+    }
+    .correo{
+      margin-left:9px ;
+    }
+    .titulos{
+      margin-left: 10px;
+    }
+    .preguntale{
+      font-size: 21px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .comentarios{
+      margin-left: 30px;
+    }
+    /* medida Mapa*/
+    .mapa{
+      width: 200px;
+      height: 150px;
+      margin-top: 50px;
+      margin-left: 30%;
+      margin-bottom: 100px;
+    }
+}
+
+/*sitio TIENDA */
+.espacio{
+  margin-bottom: 50px;
+}
+/* medida texto*/
+.centrado {
+  text-align: center;
+}
+   /* Tarjeta Index*/
+  .wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  } 
+  .tarjeta {
+    width: 280px;
+    height: 360px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  }
+  .tarjeta:hover {
+    transform: translateY(20px);
+  }
+  .tarjeta:hover:before {
+    opacity: 1;
+  }
+  .tarjeta:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .tarjeta:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .tarjeta img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+  .tarjeta .info {
+    position:relative;
+    z-index: 3;
+    color: rgb(19, 7, 13);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+  }
+  .tarjeta .info h3 {
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .tarjeta .info p {
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 110px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  .tarjeta .info a {
+    padding: 0.2rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background:  rgb(243, 199, 223);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-left: 33%;
+  }
+  .tarjeta .info a:hover {
+    background: rgb(138, 46, 122);
+    color: rgb(250, 248, 250);
+  }
+  
+/* FOOTER */
+  /* estilo de Footer */
+footer > section {
+  width: 100%;
+  display: inline-block;
+  background: rgb(49, 40, 40);
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  background: rgb(83, 62, 79);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+.footer-distributed h5 {
+  color: #ffffff;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+.footer-distributed h5 span {
+  color: rgb(216, 163, 241);
+}
+
+/* Footer links */
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: rgb(29, 21, 26);
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #221b20;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Responsive auto */
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+  .footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
